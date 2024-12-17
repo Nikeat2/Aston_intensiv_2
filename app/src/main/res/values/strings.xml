@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AstonHomework2</string>
+    <string name="click_to_rotate">Click to rotate</string>
+    <string name="random_picture">Random picture</string>
+    <string name="random_text">Random text</string>
+    <string name="click_to_reset">Click to reset</string>
 </resources>
