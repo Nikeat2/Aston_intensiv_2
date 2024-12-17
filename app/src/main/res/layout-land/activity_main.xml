@@ -6,15 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/material_dynamic_primary60"
+    android:orientation="horizontal"
     tools:context=".MainActivity">
 
     <com.example.astonhomework2.CircularView
         android:id="@+id/circularView"
-        android:layout_width="325dp"
-        android:layout_height="325dp"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
         android:layout_marginTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
@@ -35,16 +35,14 @@
         android:text="@string/click_to_reset"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/btnRotate"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/circularView" />
 
     <com.example.astonhomework2.TextGenerator
         android:id="@+id/tvRandom"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnReset"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="@string/random_text" />
 
     <ImageView
@@ -53,7 +51,7 @@
         android:layout_height="0dp"
         android:contentDescription="@string/random_picture"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/tvRandom"
-        app:layout_constraintTop_toBottomOf="@+id/btnRotate" />
+        app:layout_constraintEnd_toEndOf="@+id/tvRandom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvRandom" />
 </androidx.constraintlayout.widget.ConstraintLayout>
